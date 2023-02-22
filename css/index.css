@@ -1,0 +1,197 @@
+/* VISTA MOVIL */
+:root {
+  font-size: 3.3vw;
+}
+
+body {
+  grid-template-areas: "hd" "qs" "dv" "rs" "co" "ft";
+}
+
+div.slider {
+  grid-area: dv;
+}
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  border: 8px solid #f2ce6e;
+  border-color: var(--border-color);
+  background-color: #010005;
+}
+
+.slider ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 400%;
+  animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
+
+section#quisom {
+  grid-area: qs;
+}
+
+section#redessociales {
+  grid-area: rs;
+}
+
+section#conciertos {
+  grid-area: co;
+}
+
+section#articulos {
+  grid-area: ar;
+}
+
+section#quisom,
+section#redessociales,
+section#conciertos,
+div.slider {
+  border: 8px solid #f2ce6e;
+  border-color: var(--border-color);
+  margin-top: 1.5rem;
+  border-radius: 15px;
+}
+
+section#quisom,
+section#redessociales,
+section#conciertos {
+  padding: 1rem;
+}
+
+section#quisom h1,
+section#conciertos h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #f2ce6e;
+  border: 2px solid #f2ce6e;
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#facebook {
+  margin: auto;
+  width: fit-content;
+}
+
+section#conciertos {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+section#conciertos>* {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-size: 1.1rem;
+}
+
+section#conciertos h1 {
+  display: block;
+}
+
+section#conciertos p[class^="fecha"] {
+  background-color: #010005;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 15px 0 0 15px;
+  border: 2px solid black;
+
+}
+
+section#conciertos p[class^="lugar"] {
+  padding: 1rem 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  color: black;
+}
+
+.dark-mode section#conciertos p[class^="lugar"] {
+  border: 2px solid #d2ae42;
+}
+
+.dark-mode section#conciertos p[class^="fecha"] {
+  border-left: 2px solid #d2ae42;
+  border-top: 2px solid #d2ae42;
+  border-bottom: 2px solid #d2ae42;
+}
+
+div#quisom_rrss {
+  display: none;
+}
+
+footer#cookies {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+footer#cookies button {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+div#mapa {
+  display: none;
+}
+
+/* VISTA PC */
+
+@media (min-width:992px) {
+  main {
+    grid-template-areas: "hd hd" "qs dv" "rs co" "ft ft";
+    grid-template-columns: 1fr 2fr;
+  }
+}

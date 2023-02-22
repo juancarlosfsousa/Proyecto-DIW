@@ -1,0 +1,157 @@
+:root {
+  font-size: 3.3vw;
+}
+
+body {
+  grid-template-areas: "hd" "co" "mi" "cp" "ft";
+}
+
+section#conciertos {
+  grid-area: co;
+}
+
+section#conciertos_pasados {
+  grid-area: cp;
+}
+
+section#misas {
+  grid-area: mi;
+}
+
+section#conciertos,
+section#conciertos_pasados, section#misas {
+  border: 8px solid #f2ce6e;
+  border-color: var(--border-color);
+  margin-top: 1.5rem;
+  border-radius: 15px;
+}
+
+
+section#conciertos, section#conciertos_pasados, section#misas {
+  padding: 1rem;
+}
+
+section#conciertos h1, section#conciertos_pasados h1, section#misas h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #f2ce6e;
+  border: 2px solid #f2ce6e;
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+section#conciertos_pasados img {
+  width: 100%;
+  height: auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 0 15px 15px;
+}
+
+
+section#conciertos, section#misas {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+section#conciertos>*, section#conciertos_pasados>*, section#misas>* {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-size: 1.1rem;
+}
+
+section#conciertos p[class^="fecha"] {
+  background-color: #010005;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 15px 0 0 15px;
+  border: 2px solid black;
+}
+
+section#conciertos p[class^="lugar"] {
+  padding: 1rem 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  color: black;
+}
+
+section#conciertos_pasados p[class^="lugar"] {
+  padding: 1rem 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 15px 15px 0 0;
+  color: black;
+}
+
+section#conciertos_pasados article[class^="pasado"] {
+  margin: 0.5rem;
+}
+
+.dark-mode section#conciertos p[class^="lugar"] {
+  border: 2px solid #d2ae42;
+}
+
+.dark-mode section#conciertos p[class^="fecha"] {
+  border-left: 2px solid #d2ae42;
+  border-top: 2px solid #d2ae42;
+  border-bottom: 2px solid #d2ae42;
+}
+
+section#conciertos_pasados div#pasado {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+div#quisom_rrss {
+  display: none;
+}
+
+footer#cookies {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+footer#cookies button {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+div#mapa {
+  display: none;
+}
+
+section#misas iframe {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 1rem;
+}
+
+section#misas iframe:first-of-type {
+  margin-bottom: 2rem;
+}
+
+/* VISTA PC */
+
+@media (min-width:992px) {
+  main {
+    grid-template-areas: "hd hd" "co mi" "cp cp" "ft ft";
+    grid-template-columns: 2fr 1fr;
+  }
+
+  section#conciertos_pasados div#pasado {
+    grid-template-columns: repeat(4,1fr);
+  }
+}

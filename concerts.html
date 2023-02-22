@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#010005" />
+  <title>MEGòC - Concerts</title>
+  <link rel="stylesheet" href="./css/concerts.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <img id="logopc" src="./img/logocirculo.png" draggable="false" alt="Logo MEGòC" onclick="redirect()">
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li>Concerts</li>
+        <li><a href="#">T'agrada cantar?</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Contacte</a></li>
+        <li id="liidiomas">
+          <div id="idiomas">
+            <select name="idioma" id="idioma">
+              <option value="val">Valencià</option>
+              <option value="esp">Español</option>
+              <option value="eng">English</option>
+              <option value="hol">Holandés</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <img id="logomovil" src="./img/logocirculo.png" draggable="false" alt="Logo MEGòC" onclick="redirect()">
+    <div id="idiomaspc">
+      <select name="idioma" id="idioma">
+        <option value="val">VAL</option>
+        <option value="esp">ESP</option>
+        <option value="eng">ENG</option>
+        <option value="hol">HOL</option>
+      </select>
+    </div>
+    <button onclick="switchTheme()"></button>
+  </header>
+  <main>
+    <section id="conciertos">
+      <h1>CONCERTS PROPERS</h1>
+      <article class="concierto1">
+        <p class="fecha1">Fecha</p>
+        <p class="lugar1">Lugar concierto</p>
+      </article>
+      <article class="concierto2">
+        <p class="fecha2">Fecha</p>
+        <p class="lugar2">Lugar concierto</p>
+      </article>
+      <article class="concierto3">
+        <p class="fecha3">Fecha</p>
+        <p class="lugar3">Lugar concierto</p>
+      </article>
+      <article class="concierto4">
+        <p class="fecha4">Fecha</p>
+        <p class="lugar4">Lugar concierto</p>
+      </article>
+    </section>
+
+    <section id="misas">
+      <h1>MISAS GOSPEL</h1>
+      <iframe src="https://www.youtube.com/embed/C2B7e1veXbA" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ko8Gn44yXPI" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+
+    <section id="conciertos_pasados">
+      <h1>CONCERTS PASSATS</h1>
+      <div id="pasado">
+        <article class="pasado1">
+          <p class="lugar1">Lugar concierto</p>
+          <img src="./img/grupo3.jpg" alt="Imagen concierto">
+        </article>
+        <article class="pasado2">
+          <p class="lugar2">Lugar concierto</p>
+          <img src="./img/grupo4.jpg" alt="Imagen concierto">
+        </article>
+        <article class="pasado3">
+          <p class="lugar3">Lugar concierto</p>
+          <img src="./img/grupo7.jpg" alt="Imagen concierto">
+        </article>
+        <article class="pasado4">
+          <p class="lugar4">Lugar concierto</p>
+          <img src="./img/grupo3x.jpg" alt="Imagen concierto">
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.9811755301657!2d-0.12346398468158364!3d38.924407752956675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e667fd27363d%3A0xa830a8528626fc7e!2sCasa%20de%20la%20Fiesta!5e0!3m2!1ses!2ses!4v1676298890416!5m2!1ses!2ses"
+        width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="footer">
+      <div id="copyright">
+        <p>© 2023 MEGÒC | Todos los derechos reservados</p>
+      </div>
+      <div id="footer_rrss">
+        <ul>
+          <li><a href="https://www.facebook.com/ModernEspaiGospelCor/photos/"><i
+                class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+          <li><a href="https://www.instagram.com/modernespaigospelcor/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+          </li>
+          <li><a href="https://www.youtube.com/channel/UCBFOmQbnbP34euwO8fSE7Ag"><i
+                class="fa-brands fa-youtube fa-3x"></i></a></li>
+        </ul>
+      </div>
+      <div id="reqlegales">
+        <ul>
+          <li>Aviso Legal</li>|
+          <li>Política de privacidad</li>|
+          <li>Política de cookies</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+<script>
+  function switchTheme() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
+  function redirect() {
+    location.href = './index.html';
+  }
+</script>
