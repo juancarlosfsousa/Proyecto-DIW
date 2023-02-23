@@ -90,6 +90,15 @@ section#conciertos_pasados p[class^="lugar"] {
   color: black;
 }
 
+.dark-mode section#conciertos_pasados p[class^="lugar"] {
+  border-color: #d2ae42;
+  border-bottom: 2px solid black;
+}
+
+.dark-mode section#conciertos_pasados img {
+  border-color: #d2ae42;
+}
+
 section#conciertos_pasados article[class^="pasado"] {
   margin: 0.5rem;
 }
@@ -107,30 +116,6 @@ section#conciertos_pasados article[class^="pasado"] {
 section#conciertos_pasados div#pasado {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-div#quisom_rrss {
-  display: none;
-}
-
-footer#cookies {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 0.2rem;
-}
-
-footer#cookies button {
-  margin: 1em;
-  padding: 0.5em;
-}
-
-div#mapa {
-  display: none;
 }
 
 section#misas iframe {

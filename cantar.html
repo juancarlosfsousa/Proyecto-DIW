@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#010005" />
-  <title>MEGòC - Concerts</title>
-  <link rel="stylesheet" href="./css/concerts.css">
+  <title>MEGòC - T'agrada cantar?</title>
+  <link rel="stylesheet" href="./css/cantar.css">
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -23,8 +23,8 @@
       </label>
       <ul class="menu">
         <li><a href="./index.html">Qui som</a></li>
-        <li>Concerts</li>
-        <li><a href="./cantar.html">T'agrada cantar?</a></li>
+        <li><a href="./concerts.html">Concerts</a></li>
+        <li>T'agrada cantar?</li>
         <li><a href="./galeria.html">Galeria</a></li>
         <li><a href="./contacte.html">Contacte</a></li>
         <li id="liidiomas">
@@ -51,57 +51,35 @@
     </div>
   </header>
   <main>
-    <section id="conciertos">
-      <h1>CONCERTS PROPERS</h1>
-      <article class="concierto1">
-        <p class="fecha1">Fecha</p>
-        <p class="lugar1">Lugar concierto</p>
-      </article>
-      <article class="concierto2">
-        <p class="fecha2">Fecha</p>
-        <p class="lugar2">Lugar concierto</p>
-      </article>
-      <article class="concierto3">
-        <p class="fecha3">Fecha</p>
-        <p class="lugar3">Lugar concierto</p>
-      </article>
-      <article class="concierto4">
-        <p class="fecha4">Fecha</p>
-        <p class="lugar4">Lugar concierto</p>
-      </article>
-    </section>
 
-    <section id="misas">
-      <h1>MISAS GOSPEL</h1>
-      <iframe src="https://www.youtube.com/embed/C2B7e1veXbA" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/ko8Gn44yXPI" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </section>
-
-    <section id="conciertos_pasados">
-      <h1>CONCERTS PASSATS</h1>
-      <div id="pasado">
-        <article class="pasado1">
-          <p class="lugar1">Lugar concierto</p>
-          <img src="./img/grupo3.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado2">
-          <p class="lugar2">Lugar concierto</p>
-          <img src="./img/grupo4.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado3">
-          <p class="lugar3">Lugar concierto</p>
-          <img src="./img/grupo7.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado4">
-          <p class="lugar4">Lugar concierto</p>
-          <img src="./img/grupo3.jpg" alt="Imagen concierto">
-        </article>
+    <section id="inscripciones">
+      <h1>INSCRIPCIONS</h1>
+      <div id="fechasinscripciones">
+        <p>Data gener</p>
+        <p>Data septembre</p>
       </div>
     </section>
+
+    <section id="forminscripcion">
+      <h1>FORMULARI INSCRIPCIÓ</h1>
+      <div id="alignform">
+        <form action="" method="post">
+          <label for="nombre">Nom: </label>
+          <input type="text" autofocus id="nombre" name="nombre" required maxlength="20">
+          <label for="localidad">Localitat: </label>
+          <input type="text" id="localidad" name="localidad" required maxlength="20">
+          <label for="telefono">Telèfon: </label>
+          <input type="number" id="telefono" name="telefono" required>
+          <label for="fecha">Data: </label>
+          <select name="fecha" id="fecha">
+            <option value="gener">Gener</option>
+            <option value="septembre">Septembre</option>
+          </select>
+          <input type="submit" value="Envia">
+        </form>
+      </div>
+    </section>
+
   </main>
   <footer>
     <div id="mapa">

@@ -181,10 +181,8 @@ footer#cookies {
 footer#cookies button {
   margin: 1em;
   padding: 0.5em;
-}
-
-div#mapa {
-  display: none;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 /* VISTA PC */

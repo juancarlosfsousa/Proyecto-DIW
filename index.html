@@ -22,13 +22,14 @@
         <div class='menu-button'></div>
       </label>
       <ul class="menu">
+        <li>Qui som</li>
         <li><a href="./concerts.html">Concerts</a></li>
-        <li><a href="#">T'agrada cantar?</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Contacte</a></li>
+        <li><a href="./cantar.html">T'agrada cantar?</a></li>
+        <li><a href="./galeria.html">Galeria</a></li>
+        <li><a href="./contacte.html">Contacte</a></li>
         <li id="liidiomas">
           <div id="idiomas">
-            <select name="idioma" id="idioma">
+            <select name="idioma" class="idioma" id="idioma-mobile">
               <option value="val">VAL</option>
               <option value="esp">ESP</option>
               <option value="eng">ENG</option>
@@ -39,15 +40,15 @@
       </ul>
     </section>
     <img id="logomovil" src="./img/logocirculo.png" draggable="false" alt="Logo MEGòC">
-    <div id="idiomaspc">
-      <select name="idioma" id="idioma">
+    <div id="botones">
+      <select name="idioma" class="idioma" id="idioma-pc">
         <option value="val">VAL</option>
         <option value="esp">ESP</option>
         <option value="eng">ENG</option>
         <option value="hol">HOL</option>
       </select>
+      <button id="cambio-tema" onclick="switchTheme()"></button>
     </div>
-    <button onclick="switchTheme()"></button>
   </header>
   <main>
     <section id="quisom">
@@ -147,8 +148,8 @@
     </div>
   </footer>
   <footer id="cookies">
-    <p>Esta web contiene cookies.</p>
-    <p><button onclick="cerrarCookies()">X</button></p>
+    <p>We use cookies on this site to enhance your user experience.</p>
+    <p><button onclick="cerrarCookies()">Aceptar cookies</button></p>
   </footer>
 
 </body>

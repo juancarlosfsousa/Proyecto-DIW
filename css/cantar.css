@@ -1,0 +1,92 @@
+:root {
+  font-size: 3.3vw;
+}
+
+body {
+  grid-template-areas: "hd" "in" "fo" "ft";
+}
+
+section#inscripciones {
+  grid-area: in;
+}
+
+section#forminscripcion {
+  grid-area: fo;
+}
+
+section#inscripciones,
+section#forminscripcion {
+  border: 8px solid #f2ce6e;
+  border-color: var(--border-color);
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+section#inscripciones h1,
+section#forminscripcion h1{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #f2ce6e;
+  border: 2px solid #f2ce6e;
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+div#fechasinscripciones {
+  display: grid;
+  height: 90%;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-content: space-around ;
+}
+
+div#fechasinscripciones p {
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.dark-mode div#fechasinscripciones p {
+  border-color: white;
+}
+
+section#forminscripcion form input:not(input[type="submit"]), section#forminscripcion form select{
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 3px solid darkgray;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 3px solid darkgray;
+}
+
+.dark-mode form input, .dark-mode section#forminscripcion form select {
+  background-color: gray;
+  color: white;
+}
+
+section#forminscripcion form input, section#forminscripcion form select  {
+  width: 100%;
+}
+
+div#alignform {
+  display: flex;
+  flex-direction: column;
+}
+
+/* VISTA PC */
+@media (min-width:992px) {
+  main {
+    grid-template-areas: "hd hd" "in fo" "ft ft";
+    grid-template-columns: 1fr 4fr;
+  }
+}

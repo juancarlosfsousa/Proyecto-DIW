@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#010005" />
-  <title>MEGòC - Concerts</title>
-  <link rel="stylesheet" href="./css/concerts.css">
+  <title>MEGòC - Contacte</title>
+  <link rel="stylesheet" href="./css/contacte.css">
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -23,10 +23,10 @@
       </label>
       <ul class="menu">
         <li><a href="./index.html">Qui som</a></li>
-        <li>Concerts</li>
+        <li><a href="./concerts.html">Concerts</a></li>
         <li><a href="./cantar.html">T'agrada cantar?</a></li>
         <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacte.html">Contacte</a></li>
+        <li>Contacte</li>
         <li id="liidiomas">
           <div id="idiomas">
             <select name="idioma" id="idioma">
@@ -51,57 +51,42 @@
     </div>
   </header>
   <main>
-    <section id="conciertos">
-      <h1>CONCERTS PROPERS</h1>
-      <article class="concierto1">
-        <p class="fecha1">Fecha</p>
-        <p class="lugar1">Lugar concierto</p>
-      </article>
-      <article class="concierto2">
-        <p class="fecha2">Fecha</p>
-        <p class="lugar2">Lugar concierto</p>
-      </article>
-      <article class="concierto3">
-        <p class="fecha3">Fecha</p>
-        <p class="lugar3">Lugar concierto</p>
-      </article>
-      <article class="concierto4">
-        <p class="fecha4">Fecha</p>
-        <p class="lugar4">Lugar concierto</p>
-      </article>
-    </section>
 
-    <section id="misas">
-      <h1>MISAS GOSPEL</h1>
-      <iframe src="https://www.youtube.com/embed/C2B7e1veXbA" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/ko8Gn44yXPI" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </section>
-
-    <section id="conciertos_pasados">
-      <h1>CONCERTS PASSATS</h1>
-      <div id="pasado">
-        <article class="pasado1">
-          <p class="lugar1">Lugar concierto</p>
-          <img src="./img/grupo3.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado2">
-          <p class="lugar2">Lugar concierto</p>
-          <img src="./img/grupo4.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado3">
-          <p class="lugar3">Lugar concierto</p>
-          <img src="./img/grupo7.jpg" alt="Imagen concierto">
-        </article>
-        <article class="pasado4">
-          <p class="lugar4">Lugar concierto</p>
-          <img src="./img/grupo3.jpg" alt="Imagen concierto">
-        </article>
+    <section id="contacto">
+      <h1>CONTACTE</h1>
+      <div id="itemscontacto">
+        <p>Telèfon: 630 87 77 25</p>
+        <p><a href="mailto:modernespaigospelcor@hotmail.com">modernespaigospelcor@hotmail.com</a></p>
+        <div id="quisom_rrss">
+          <ul>
+            <li><a href="https://www.facebook.com/ModernEspaiGospelCor/photos/"><i
+                  class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+            <li><a href="https://www.instagram.com/modernespaigospelcor/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UCBFOmQbnbP34euwO8fSE7Ag"><i
+                  class="fa-brands fa-youtube fa-3x"></i></a></li>
+          </ul>
+        </div>
       </div>
     </section>
+
+    <section id="contrataciones">
+      <h1>CONTRATACIONS</h1>
+      <div id="alignform">
+        <form action="" method="post">
+          <label for="nombre">Nom: </label>
+          <input type="text" autofocus id="nombre" name="nombre" required maxlength="20">
+          <label for="localidad">Localitat: </label>
+          <input type="text" id="localidad" name="localidad" required maxlength="20">
+          <label for="telefono">Telèfon: </label>
+          <input type="number" id="telefono" name="telefono" required>
+          <label for="detalls">Detalls: </label>
+          <textarea name="" id="detalls" rows="3"></textarea>
+          <input type="submit" value="Envia">
+        </form>
+      </div>
+    </section>
+
   </main>
   <footer>
     <div id="mapa">

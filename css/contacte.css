@@ -1,0 +1,117 @@
+:root {
+  font-size: 3.3vw;
+}
+
+body {
+  grid-template-areas: "hd" "in" "co" "ft";
+}
+
+section#contacto {
+  grid-area: in;
+}
+
+section#contrataciones {
+  grid-area: co;
+}
+
+section#contacto,
+section#contrataciones {
+  border: 8px solid #f2ce6e;
+  border-color: var(--border-color);
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+section#contacto h1,
+section#contrataciones h1{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #f2ce6e;
+  border: 2px solid #f2ce6e;
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+div#itemscontacto {
+  display: grid;
+  height: 90%;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-content: space-evenly;
+}
+
+div#itemscontacto p {
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.dark-mode div#itemscontacto p {
+  border-color: white;
+}
+
+div#itemscontacto a {
+  color: black;
+}
+
+div#itemscontacto a:hover {
+  color: #d2ae42;
+}
+
+.dark-mode div#itemscontacto a:hover {
+  color: #d2ae42;
+}
+
+
+.dark-mode div#itemscontacto a {
+  color: white;
+}
+
+div#itemscontacto i {
+  color: black;
+}
+
+.dark-mode div#itemscontacto i {
+  color: white;
+}
+
+section#contrataciones form input:not(input[type="submit"]), section#contrataciones form textarea{
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 3px solid darkgray;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 3px solid darkgray;
+}
+
+.dark-mode form input, .dark-mode section#contrataciones form textarea {
+  background-color: gray;
+  color: white;
+}
+
+section#contrataciones form input, section#contrataciones form textarea  {
+  width: 100%;
+}
+
+div#alignform {
+  display: flex;
+  flex-direction: column;
+}
+
+/* VISTA PC */
+@media (min-width:992px) {
+  main {
+    grid-template-areas: "hd hd" "in co" "ft ft";
+    grid-template-columns: 1fr 4fr;
+  }
+}
