@@ -115,6 +115,10 @@ section#conciertos h1 {
   margin-bottom: 0.5rem;
 }
 
+section#quisom p {
+  padding: 0.6rem;
+}
+
 #facebook {
   margin: auto;
   width: fit-content;

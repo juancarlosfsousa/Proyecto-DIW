@@ -60,7 +60,7 @@ body {
 }
 
 main section {
-  background-color: rgb(235, 235, 235);
+  background-color: #eaebed;
 }
 
 .dark-mode main section {
@@ -341,7 +341,8 @@ header img {
   }
 
   div#footer {
-    margin-top: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
     margin-left: 3rem;
   }
 
